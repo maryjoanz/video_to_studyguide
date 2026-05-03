@@ -15,6 +15,7 @@ The pipeline takes an instructional video and produces a flowing HTML document t
 
 The output is a single self-contained HTML file + a folder of frame images.
 
+See example [prototype HTML page](https://htmlpreview.github.io/?https://github.com/maryjoanz/video_to_studyguide/blob/main/prototype_study_guide.html)
 ---
 
 ## Two-Pass Workflow
