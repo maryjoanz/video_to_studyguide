@@ -7,21 +7,25 @@
   <meta name="description" content="Illustrated study guide covering the fundamentals of photosynthesis, light reactions, and the Calvin cycle.">
   <style>
     /* ========== CSS CUSTOM PROPERTIES ========== */
+    /* Base palette: #750014 (header/banner only), #FFFFFF / neutral grays elsewhere */
     :root {
-      --color-bg: #FAFAF7;
+      --color-bg: #FFFFFF;
       --color-surface: #FFFFFF;
-      --color-text: #1B1B18;
-      --color-text-secondary: #4A4A45;
-      --color-accent: #2D6A4F;
-      --color-accent-light: #D8F3DC;
-      --color-accent-dark: #1B4332;
-      --color-border: #D4D4CF;
-      --color-border-light: #E8E8E3;
-      --color-focus: #2563EB;
-      --color-key-term-bg: #FEF3C7;
-      --color-key-term-border: #F59E0B;
-      --color-note-bg: #EFF6FF;
-      --color-note-border: #3B82F6;
+      --color-text: #1A1A1A;
+      --color-text-secondary: #555555;
+      --color-accent: #333333;
+      --color-accent-light: #F5F5F5;
+      --color-accent-dark: #1A1A1A;
+      --color-border: #D0D0D0;
+      --color-border-light: #E5E5E5;
+      --color-focus: #1A1A1A;
+      --color-key-term-bg: #F5F5F5;
+      --color-key-term-border: #999999;
+      --color-note-bg: #F5F5F5;
+      --color-note-border: #999999;
+      --color-banner: #750014;
+      --color-banner-text: #FFFFFF;
+      --color-banner-secondary: #ECBFC7;
       --font-heading: 'Merriweather', 'Georgia', serif;
       --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
       --font-mono: 'JetBrains Mono', 'Consolas', monospace;
@@ -80,8 +84,8 @@
 
     /* ========== DOCUMENT HEADER ========== */
     .doc-header {
-      background: var(--color-accent-dark);
-      color: #fff;
+      background: var(--color-banner);
+      color: var(--color-banner-text);
       padding: var(--space-2xl) var(--space-lg);
       text-align: center;
     }
@@ -91,7 +95,7 @@
       font-weight: 600;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #95D5B2;
+      color: var(--color-banner-secondary);
       margin-bottom: var(--space-sm);
     }
     .doc-header h1 {
@@ -104,7 +108,7 @@
     }
     .doc-header__meta {
       font-size: 0.95rem;
-      color: #B7E4C7;
+      color: var(--color-banner-secondary);
       line-height: 1.5;
     }
     .doc-header__meta span + span::before {
@@ -313,7 +317,7 @@
       display: block;
       font-weight: 700;
       font-size: 0.85rem;
-      color: #1E40AF;
+      color: #333333;
       margin-bottom: var(--space-xs);
     }
 

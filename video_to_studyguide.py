@@ -368,16 +368,19 @@ HTML_TEMPLATE = textwrap.dedent("""\
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <style>
     :root {{
-      --color-bg: #FAFAF7;
+      --color-bg: #FFFFFF;
       --color-surface: #FFFFFF;
-      --color-text: #1B1B18;
-      --color-text-secondary: #4A4A45;
-      --color-accent: #2D6A4F;
-      --color-accent-light: #D8F3DC;
-      --color-accent-dark: #1B4332;
-      --color-border: #D4D4CF;
-      --color-border-light: #E8E8E3;
-      --color-focus: #2563EB;
+      --color-text: #1A1A1A;
+      --color-text-secondary: #555555;
+      --color-accent: #333333;
+      --color-accent-light: #F5F5F5;
+      --color-accent-dark: #1A1A1A;
+      --color-border: #D0D0D0;
+      --color-border-light: #E5E5E5;
+      --color-focus: #1A1A1A;
+      --color-banner: #750014;
+      --color-banner-text: #FFFFFF;
+      --color-banner-secondary: #ECBFC7;
       --font-heading: 'Merriweather', 'Georgia', serif;
       --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
       --font-mono: 'JetBrains Mono', 'Consolas', monospace;
@@ -405,18 +408,18 @@ HTML_TEMPLATE = textwrap.dedent("""\
     .skip-link:focus {{ top: var(--space-md); }}
     :focus-visible {{ outline: 3px solid var(--color-focus); outline-offset: 3px; border-radius: 2px; }}
     .doc-header {{
-      background: var(--color-accent-dark); color: #fff;
+      background: var(--color-banner); color: var(--color-banner-text);
       padding: var(--space-2xl) var(--space-lg); text-align: center;
     }}
     .doc-header__eyebrow {{
       font-size: 0.85rem; font-weight: 600; letter-spacing: 0.12em;
-      text-transform: uppercase; color: #95D5B2; margin-bottom: var(--space-sm);
+      text-transform: uppercase; color: var(--color-banner-secondary); margin-bottom: var(--space-sm);
     }}
     .doc-header h1 {{
       font-family: var(--font-heading); font-size: clamp(1.75rem, 4vw, 2.75rem);
       font-weight: 700; line-height: 1.25; max-width: 20em; margin: 0 auto var(--space-md);
     }}
-    .doc-header__meta {{ font-size: 0.95rem; color: #B7E4C7; line-height: 1.5; }}
+    .doc-header__meta {{ font-size: 0.95rem; color: var(--color-banner-secondary); line-height: 1.5; }}
     .doc-header__meta span + span::before {{ content: "·"; margin: 0 0.5em; }}
     .toc {{
       background: var(--color-surface); border: 1px solid var(--color-border);
